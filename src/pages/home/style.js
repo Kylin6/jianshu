@@ -88,6 +88,19 @@ export const ListInfo = styled.div`
     }
 `;
 
+export const LoadMore = styled.div`
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    line-height: 40px;
+    background: #a5a5a5;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+`;
+
 export const RecommendWrapper = styled.div`
     margin-top: -4px;
     .recommendItem {
@@ -102,17 +115,106 @@ export const Download = styled.div`
     padding: 10px 20px;
     border: 1px solid #f0f0f0;
     border-radius: 6px;
+    vertical-align: middle;
     .pic{
-        // float: left;
+        display:inline-block;
         width: 60px;
         height: 60px;
         opacity: .85;
+        vertical-align: middle;
     }
 `;
 
 export const DownloadInfo = styled.div`
-    // float: right;
     margin-left: 7px;
     display: inline-block;
     vertical-align: middle;
+    .title {
+        font-size: 15px;
+        color: #333;
+    }
+    .desc {
+        margin-top: 4px;
+        font-size: 13px;
+        color: #999;
+    }
+`;
+
+export const WriterWrapper = styled.div`
+    // margin-top: 20px;
+    // margin-bottom: 15px;
+    line-heigth: 20px;
+    font-size: 14px;
+    color: #969696;
+`;
+
+export const SearchInfoSwitch = styled.span`
+    float: right;
+    font-size: 13px;
+    cursor: pointer;
+    .spin {
+        display: block;
+        float: left;
+        font-size: 12px;
+        margin-right: 2px;
+        transition: all .2s ease-in;
+        transform-origin: center center;
+    }
+`;
+
+export const WriterItem = styled.div`
+    margin-top: 15px;
+    height: 48px;
+    .avatarPic{
+        width: 48px;
+        height: 48px;
+        margin-right: 10px;
+        border-radius: 50%;
+        float: left;
+    }
+    .follow {
+        color: #42c02e;
+        margin-top: 5px;
+        font-size: 13px;
+        float: right;
+    }
+    .name {
+        padding-top: 5px;
+        margin-right: 60px;
+        color: #333;
+        font-size: 14px;
+        cursor: pointer;
+        line-height: 20px;
+    }
+    .info{
+        font-size: 12px;
+        margin-top: 2px;
+    }
+`;
+
+export const WriterMore = styled.div`
+    margin-top: 20px;
+    padding: 7px 7px 7px 12px;
+    color: #787878;
+    font-size: 13px;
+    text-align: center;
+    line-height: 19px;
+    background: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+`;
+
+export const BackTop = styled.div`
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    &:hover{
+        background: #ddd;
+    }
 `;
